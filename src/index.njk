@@ -5,11 +5,9 @@ layout: zakladni
 
  <div class=telo>
 <h1>Všechny</h1>
- 
-
 <ul>
 	{% for film in filmy %}
-		<li>
+		<li class="seznam_filmu">
             <a href="/film/{{ film.nazev | slug }}">{{ film.nazev }}</a>
         </li>
 	{% endfor %}
