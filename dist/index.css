@@ -15,7 +15,22 @@ body {
 
 .hlavicka {
   background-color: #9c27b0;
-  height: 40px;
+  height: 64px;
+}
+
+.hlavicka_obsah {
+  padding: 16px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.hlavicka_logo {
+  display: flex;
+  margin: 0px;
+}
+
+.logo {
+  display: inline-flex;
 }
 
 /*# sourceMappingURL=index.css.map */

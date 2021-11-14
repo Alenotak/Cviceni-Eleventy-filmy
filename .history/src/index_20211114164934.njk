@@ -6,8 +6,6 @@ layout: zakladni
 
 <ul>
 	{% for film in filmy %}
-		<li>
-            <a href="/film/{{ film.nazev | slug }}">{{ film.nazev }}</a>
-        </li>
+		<li>{{ film.nazev }}</li>
 	{% endfor %}
 </ul>
