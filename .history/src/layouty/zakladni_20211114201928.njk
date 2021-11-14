@@ -8,6 +8,8 @@
 	</head>
 	<body>
 		{% include "hlavicka.njk" %}
+		{{ content | safe }}
+
 		{% include "zapati.njk" %}
 		{{ content | safe }}
 		</body>
