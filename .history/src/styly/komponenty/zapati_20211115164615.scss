@@ -1,0 +1,57 @@
+.paticka {
+    font-family: "Roboto", sans-serif;
+    box-sizing: inherit;
+    background-color: #fafafa;
+    padding: 1rem 0;
+}
+
+.paticka_obsah {
+    font-family: "Roboto", sans-serif;
+    box-sizing: inherit;
+    max-width: 52rem;
+    width: 100%;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.paticka_casti {
+    font-family: "Roboto", sans-serif;
+    box-sizing: inherit;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+    gap: 1rem;
+}
+
+.paticka_sekce {
+    font-family: "Roboto", sans-serif;
+    box-sizing: inherit;
+}
+
+.paticka_nadpis {
+    font-family: "Roboto", sans-serif;
+    box-sizing: inherit;
+    margin: 0;
+    font-size: 1.1em;
+    color: #303030;
+}
+
+.paticka_seznam {
+    font-family: "Roboto", sans-serif;
+    box-sizing: inherit;
+    margin: 0.5em 0 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.paticka_polozka {
+    font-family: "Roboto", sans-serif;
+    list-style-type: none;
+    box-sizing: inherit;
+    padding: 0.2em 0;
+    line-height: 1.1;
+}
+
+.paticka_sekce {
+    font-family: "Roboto", sans-serif;
+    box-sizing: inherit;
+}

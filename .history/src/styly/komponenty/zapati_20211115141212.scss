@@ -1,0 +1,23 @@
+.paticka {
+    font-family: "Roboto", sans-serif;
+    box-sizing: inherit;
+    background-color: #fafafa;
+    padding: 1rem 0;
+}
+
+.paticka_obsah {
+    font-family: "Roboto", sans-serif;
+    box-sizing: inherit;
+    max-width: 52rem;
+    width: 100%;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.paticka_sloupce {
+    font-family: "Roboto", sans-serif;
+    box-sizing: inherit;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+    gap: 1rem;
+}
