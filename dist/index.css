@@ -64,12 +64,6 @@ h1 {
   padding: 1rem;
 }
 
-.paticka_casti {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
-  gap: 1rem;
-}
-
 .paticka_nadpis {
   margin: 0;
   font-size: 1.1em;
