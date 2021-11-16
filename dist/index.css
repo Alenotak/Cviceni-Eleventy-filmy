@@ -82,4 +82,14 @@ h1 {
   line-height: 1.1;
 }
 
+.detail {
+  display: grid;
+  gap: 0 2rem;
+}
+
+.hlavni_nadpis {
+  margin: 0 0 0.5em;
+  font-size: 2rem;
+}
+
 /*# sourceMappingURL=index.css.map */
