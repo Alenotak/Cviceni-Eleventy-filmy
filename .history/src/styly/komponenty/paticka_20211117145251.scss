@@ -1,0 +1,50 @@
+.paticka {
+    display: flex;
+    flex-direction: column;
+    font-family: "Roboto", sans-serif;
+    box-sizing: inherit;
+    background-color: #fafafa;
+    padding: 1rem 0;
+}
+
+.paticka_sekce_1 {
+    display: flex;
+    width: 50%;
+    justify-content: flex-start;
+}
+
+.paticka_sekce_2 {
+    display: flex;
+    width: 50%;
+    justify-content: flex-end;
+} 
+
+
+.paticka_obsah {
+    max-width: 52rem;
+    width: 100%;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+
+
+
+.paticka_nadpis {
+    margin: 0;
+    font-size: 1.1em;
+    color: #303030;
+}
+
+.paticka_seznam {
+    margin: 0.5em 0 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.paticka_polozka {
+    box-sizing: inherit;
+    padding: 0.2em 0;
+    line-height: 1.1;
+}
+
