@@ -13,9 +13,18 @@ body {
   margin: 0;
 }
 
+.layout {
+  display: grid;
+}
+
+.telo {
+  margin-left: 155.5px;
+}
+
 .hlavicka {
   background-color: #9c27b0;
   height: 64px;
+  width: 100%;
 }
 
 .hlavicka_obsah {

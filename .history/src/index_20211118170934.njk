@@ -1,0 +1,17 @@
+---
+layout: zakladni
+---
+
+
+<div class=telo>
+<h1>Všechny</h1>
+<ul>
+	{% for film in filmy %}
+		<li  class="seznam_filmu">
+			::before
+            <a class='seznam_polozka' href="/film/{{ film.nazev | slug }}"> 
+				{{ film.nazev }}</a>
+        </li>
+	{% endfor %}
+</ul>
+</div>
