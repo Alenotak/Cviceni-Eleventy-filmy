@@ -8,8 +8,7 @@ layout: zakladni
 <ul>
 	{% for film in filmy %}
 		<li class="seznam_filmu">
-            <a class='seznam_polozka' href="/film/{{ film.nazev | slug }}">
-			{{ film.nazev }}</a>
+            <a class='seznam_polozka' href="/film/{{ film.nazev | slug }}">{{ film.nazev }}</a>
         </li>
 	{% endfor %}
 </ul>

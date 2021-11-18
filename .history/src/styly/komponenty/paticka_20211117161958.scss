@@ -6,7 +6,7 @@
     font-family: "Roboto", sans-serif;
     box-sizing: inherit;
     background-color: #fafafa;
-    padding: 1rem;
+    padding: 1rem 0;
 }
 
 .paticka_sekce_1 {
@@ -25,25 +25,20 @@ h2 {
 }
 
 .paticka_seznam {
-    padding-left: 0;
+    margin: 0.5em 0 0;
+    padding: 0;
 }
 
 .paticka_polozka {
     box-sizing: inherit;
+    padding: 0.2em 0;
     line-height: 1.1;
-    color: blackgi;
 }
 
 li {
-    width: 253px;
     list-style-type: none;
 }
 
 a {
     text-decoration: none;
 }
-
-ul {
-    padding-left: 0;
-}
-

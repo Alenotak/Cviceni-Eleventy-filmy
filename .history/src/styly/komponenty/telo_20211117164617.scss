@@ -15,13 +15,12 @@ h1 {
     line-height: 1.1;
 }
 
-.seznam_filmu::before {
+.seznam__odkaz::before {
     content: "";
     margin-bottom: 0.1em;
     width: 0.5em;
     height: 0.5em;
-    background-color: blue;
+    background-color: currentColor;
     display: inline-block;
     margin-right: 0.5em;
 }
-
