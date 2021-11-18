@@ -22,6 +22,7 @@ body {
   padding: 16px;
   width: 100%;
   margin: 0 auto;
+  margin: 0 155.5px 0 155.5px;
 }
 
 .hlavicka_logo {
@@ -37,7 +38,7 @@ body {
   max-width: 52rem;
   width: 100%;
   padding: 2rem 1rem;
-  margin: 0 auto;
+  margin: 0 155.5px 0 155.5px;
 }
 
 h1 {
@@ -69,6 +70,7 @@ h1 {
   box-sizing: inherit;
   background-color: #fafafa;
   padding: 1rem;
+  margin: 0 155.5px 0 155.5px;
 }
 
 .paticka_sekce_1 {
