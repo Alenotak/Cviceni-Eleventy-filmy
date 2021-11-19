@@ -1,0 +1,35 @@
+html {
+	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	margin: 0;
+}
+
+.layout {
+	display: grid;
+}
+.telo {
+	margin-left: 155.5px;
+}
+
+.seznam_filmu::before {
+    content: "";
+    margin-bottom: 0.1em;
+    width: 0.5em;
+    height: 0.5em;
+    background-color: blue;
+    display: inline-block;
+    margin-right: 0.5em;
+}
+
+.seznam_filmu:visited {
+    color: blue;
+}

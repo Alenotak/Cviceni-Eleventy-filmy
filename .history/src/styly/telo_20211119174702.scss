@@ -1,0 +1,23 @@
+.telo {
+    max-width: 52rem;
+    width: 100%;
+    padding: 2rem 1rem;
+    margin: 0 auto;
+}
+
+h1 {
+    margin: 0 0 0 0.5rem;
+    font-size: 2rem;
+}
+
+.seznam_filmu {
+    padding: 0.2em 0;
+    line-height: 1.1;
+}
+
+.seznam_filmu::before {
+    content: "";
+}
+   
+
+    

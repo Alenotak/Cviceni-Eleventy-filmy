@@ -1,0 +1,50 @@
+.paticka {
+
+    width: 100%;
+    font-family: "Roboto", sans-serif;
+    box-sizing: inherit;
+    background-color: #fafafa;
+    padding: 1rem 0 1rem 0;
+}
+
+.paticka_obsah {
+    display: grid;
+    grid-template-columns: 256px 1fr;
+    margin: 0 155.5px 0 155.5px;
+}
+
+h2 {
+    margin: 0;
+    font-size: 1.1em;
+    color: #303030;
+    width: 253px;
+}
+
+.paticka__seznam {
+    padding-left: 0;
+    list-style-type: none;
+}
+
+.paticka__odkaz {
+    color: #444444;
+}
+
+.paticka__polozka {
+    box-sizing: inherit;
+    line-height: 1.1;
+}
+
+li {
+    width: 253px;
+    list-style-type: none;
+    padding: 3.2px 0 3.2px 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    padding-left: 0;
+}
+
