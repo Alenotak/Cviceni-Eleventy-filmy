@@ -1,0 +1,43 @@
+---
+layout: zakladni
+pagination:
+  data: filmy
+  size: 1
+  alias: film
+permalink: "/film/{{ film.nazev | slug }}/"
+---
+
+<div class=detail>
+  <main>
+<h2 class='film_nazev'>{{ film.nazev }}</h2>
+<dl class='detail_podrobnosti'>
+<dt class='detail_popisek'>Rok:</dt> <dd class='detail_informace'>{{ film.rok }}</dd> 
+<p><span class='detail_popisek'>Země:</span> <span class='detail_informace'>{{ film.zeme }}</span></p>
+<p><span class='detail_popisek'>Žánr:</span><span class='detail_informace'>{{ film.zanr }}</span></p>
+<p><span class='detail_popisek'>Délka:</span><span class='detail_informace'>{{ film.delka }}</span></p>
+</div>
+<h3 class='nadpis_stredni'>Obsah</h3>
+
+<p> {{ film.obsah.text }} (<a class='autor_odkaz' href='{{ film.obsah.autor.odkaz }}'>{{ film.obsah.autor.jmeno }}</a>) </p>
+</main>
+<aside>
+    <img class="film_obrazek" src={{film.plakat.url}}>
+    <section>
+      <h3 class="nadpis_maly">Hodnoceni</h3>
+      <div class="hvezdy  hvezdy--skore-{{film.hodnoceni}}"></div>
+    </section>
+    {% if film.souvisejici | length > 0 %}
+    <section>
+      <h3 class="nadpis_maly">Souvisejici filmy</h3>
+      <ul class="list">
+        {% for film in film.souvisejici %}
+        <li class="list__item">
+          <a class="list__link" href="/film/{{ film.nazev | slug }}">{{ film.nazev }}</a>
+        </li>
+        {% endfor %}
+      </ul>
+    </section>
+    {% endif %}
+  </aside>
+
+</div>

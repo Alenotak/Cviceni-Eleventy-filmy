@@ -1,0 +1,79 @@
+@media (min-width: 800px) {
+  .detail {grid-template-columns: 1fr 12rem;}
+}
+
+.detail {
+display: grid;
+gap: 0 2rem;
+margin: 0 155.5px 0 155.5px;
+padding-top: 32px;
+}
+
+.detail_podrobnosti {
+  display: grid;
+  grid-template-columns: 1fr 10fr;
+  grid-template-rows: 4fr;
+
+.hlavni_nadpis {
+    margin: 0 0 0.5em;
+    font-size: 2rem;
+}
+.film_nazev {
+    font-size: 2rem;
+}
+
+.detail_popisek {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 0.2em 0.5em;
+    font-weight: 700;
+}
+
+.film_obrazek {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+}
+
+.autor_odkaz {
+    font-style: italic;
+    text-decoration: none;
+    color: blue;
+}
+
+.hvezdy {
+    --skore: 0;
+    width: 7.5rem;
+    height: 1.5rem;
+    display: flex;
+}
+
+.hvezdy::after {
+    background-image: url('/obrazky/hvezda-prazdna.svg');
+  flex-grow: calc(5 - var(--skore));
+}
+
+.hvezdy::before {
+    content: '';
+  background-image: url('/obrazky/hvezda-vyplnena.svg');
+  background-size: contain;
+  flex-grow: var(--skore);
+}
+.hvezdy--skore-5 {
+    --skore: 5;
+  }
+  .hvezdy--skore-4 {
+    --skore: 4;
+  }
+  .hvezdy--skore-3 {
+    --skore: 3;
+  }
+  .hvezdy--skore-2 {
+    --skore: 2;
+  }
+  .hvezdy--skore-1 {
+    --skore: 1;
+  }
+  .hvezdy--skore-0 {
+    --skore: 0;
+  }
