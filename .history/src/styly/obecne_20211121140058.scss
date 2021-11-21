@@ -38,3 +38,7 @@ body {
 .seznam_polozka:active {
 	text-decoration: underline;
 }
+.hvezdy::after {
+	background-image: url(/obrazky/hvezda-prazdna.svg);
+	flex-grow: calc(5 - var(--skore));
+  }

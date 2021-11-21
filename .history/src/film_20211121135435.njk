@@ -24,7 +24,7 @@ permalink: "/film/{{ film.nazev | slug }}/"
     <img class="film_obrazek" src={{film.plakat.url}}>
     <section>
       <h3 class="podnadpis">Hodnoceni</h3>
-      <div class="hvezdy  hvezdy--skore-{{film.hodnoceni}}"></div>
+      <div class="hodnoceni  hodnoceni--skore-{{film.hodnoceni}}"></div>
     </section>
     {% if film.souvisejici | length > 0 %}
     <section>

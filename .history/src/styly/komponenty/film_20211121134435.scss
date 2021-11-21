@@ -41,46 +41,41 @@ padding-top: 32px;
     color: blue;
 }
 
-.hvezdy {
+.hodnoceni {
     --skore: 0;
     width: 7.5rem;
     height: 1.5rem;
     display: flex;
 }
 
-.hvezdy::after {
-  background-image: url(/obrazky/hvezda-prazdna.svg);
-  flex-grow: calc(5 - var(--skore));
-}
-
-.hvezdy::before {
+.hodnoceni::before {
     content: "";
     background-image: url(/obrazky/hvezda-vyplnena.svg);
     background-size: contain;
     flex-grow: var(--skore);
 }
 
-.hvezdy--skore-5 {
-  --skore: 5;
+.hodnoceni::after {
+  background-image: url(/obrazky/hvezda-prazdna.svg);
+  flex-grow: calc(5 - var(--skore));
 }
 
-  .hvezdy--skore-4 {
+.hodnoceni {
+    --skore: 5;
+  }
+  .hodnoceni--skore-4 {
     --skore: 4;
   }
-
-  .hvezdy--skore-3 {
+  .hodnoceni--skore-3 {
     --skore: 3;
   }
-
-  .hvezdy--skore-2 {
+  .hodnoceni--skore-2 {
     --skore: 2;
   }
-
-  .hvezdy--skore-1 {
+  .hodnoceni--skore-1 {
     --skore: 1;
   }
-
-  .hvezdy--skore-0 {
+  .hodnoceni--skore-0 {
     --skore: 0;
   }
 
