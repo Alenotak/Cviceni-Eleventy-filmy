@@ -48,16 +48,16 @@ padding-top: 32px;
     display: flex;
 }
 
-.hvezdy::before, .hvezdy::after {
+.hvezdy::after {
+  background-image: url(/obrazky/hvezda-prazdna.svg);
+  flex-grow: calc(5 - var(--skore));
+}
+
+.hvezdy::before {
     content: "";
     background-image: url(/obrazky/hvezda-vyplnena.svg);
     background-size: contain;
     flex-grow: var(--skore);
-}
-
-.hvezdy::after {
-  background-image: url(/obrazky/hvezda-prazdna.svg);
- flex-grow: calc(5 - var(--skore));
 }
 
 .hvezdy--skore-5 {

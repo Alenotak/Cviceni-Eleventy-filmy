@@ -115,16 +115,16 @@ body {
   display: flex;
 }
 
-.hvezdy::after {
-  background-image: url(/obrazky/hvezda-prazdna.svg);
-  flex-grow: calc(5 - var(--skore));
-}
-
-.hvezdy::before {
+.hvezdy::before, .hvezdy::after {
   content: "";
   background-image: url(/obrazky/hvezda-vyplnena.svg);
   background-size: contain;
   flex-grow: var(--skore);
+}
+
+.hvezdy::after {
+  background-image: url(/obrazky/hvezda-prazdna.svg);
+  flex-grow: calc(5 - var(--skore));
 }
 
 .hvezdy--skore-5 {
