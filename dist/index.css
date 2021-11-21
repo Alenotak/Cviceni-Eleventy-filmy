@@ -1,4 +1,5 @@
 html {
+  display: block;
   box-sizing: border-box;
 }
 
@@ -35,17 +36,22 @@ body {
   color: blue;
 }
 
+.seznam_polozka:active {
+  text-decoration: underline;
+}
+
 .hlavicka {
   background-color: #9c27b0;
   height: 64px;
   width: 100%;
+  display: inline-flex;
 }
 
 .hlavicka_obsah {
   padding: 1rem 0 1rem 0;
   width: 100%;
   margin: 0 auto;
-  margin: 0 155.5px 0 155.5px;
+  margin: 0 0 0 155.5px;
 }
 
 .hlavicka_logo {
@@ -59,7 +65,7 @@ body {
 
 @media (min-width: 800px) {
   .detail {
-    grid-template-columns: 1fr 12rem;
+    grid-template-columns: 1fr 192px;
   }
 }
 .detail {
@@ -76,13 +82,14 @@ body {
   gap: 0.2em 0.5em;
 }
 
-.hlavni_nadpis {
-  margin: 0 0 0.5em;
-  font-size: 2rem;
+.podnadpis {
+  font-size: 1.5rem;
 }
 
 .film_nazev {
   font-size: 2rem;
+  width: 100%;
+  margin-bottom: 16px;
 }
 
 .detail_popisek {
@@ -101,56 +108,46 @@ body {
   color: blue;
 }
 
-.hvezdy {
+.hodnoceni {
   --skore: 0;
   width: 7.5rem;
   height: 1.5rem;
   display: flex;
 }
 
-.hvezdy::after {
-  background-image: url("/obrazky/hvezda-prazdna.svg");
-  flex-grow: calc(5 - var(--skore));
-}
-
-.hvezdy::before {
+.hodnoceni::before {
   content: "";
-  background-image: url("/obrazky/hvezda-vyplnena.svg");
+  background-image: url(obrazky/hvezda-vyplnena.svg);
   background-size: contain;
   flex-grow: var(--skore);
 }
 
-.seznam_filmu::before {
-  content: "";
-  margin-bottom: 0.1em;
-  width: 0.5em;
-  height: 0.5em;
-  background-color: blue;
-  display: inline-block;
-  margin-right: 0.5em;
+.hodnoceni::after {
+  background-image: url(obrazky/hvezda-prazdna.svg);
+  flex-grow: calc(5 - var(--skore));
 }
 
-.hvezdy--skore-5 {
+.hodnoceni {
   --skore: 5;
 }
 
-.hvezdy--skore-4 {
+.hodnoceni--skore-4 {
   --skore: 4;
 }
 
-.hvezdy--skore-3 {
+.hodnoceni--skore-3 {
   --skore: 3;
 }
 
-.hvezdy--skore-2 {
+.hodnoceni--skore-2 {
   --skore: 2;
 }
 
-.hvezdy--skore-1 {
+.hodnoceni--skore-1 {
   --skore: 1;
 }
 
-.hvezdy--skore-0 {
+.hodnoceni--skore-0 {
   --skore: 0;
 }
 
